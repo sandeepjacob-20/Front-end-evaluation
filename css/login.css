@@ -7,6 +7,12 @@ h1{
 /*FORM DESIGN*/
 .container {
     text-align: center;
+    animation: changeColor 4s linear infinite;
+    /* background-color: rgb(240, 160, 160); */
+    border-radius: 12px;
+    padding: 1px;
+    width: 40vw;
+    margin-top:6%;
 }
 
 .formArea {
@@ -18,4 +24,24 @@ h1{
     margin-top: 2%;
     height: 200px;
     width: auto;
+}
+
+body{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+/* Adding keyframe for color change */
+@keyframes changeColor {
+    0% {
+        background-color: #92cff8;
+    }
+
+    50% {
+        background-color: #a5e73c;
+    }
+
+    100% {
+        background-color: #3498db;
+    }
 }
