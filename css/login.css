@@ -1,0 +1,21 @@
+/* CHANGES THE FONT OF HEADER*/
+h1{
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*FORM DESIGN*/
+.container {
+    text-align: center;
+}
+
+.formArea {
+    margin-top: 5%;
+}
+
+/* ADDS BRAND LOGO */
+.loginImg{
+    margin-top: 2%;
+    height: 200px;
+    width: auto;
+}

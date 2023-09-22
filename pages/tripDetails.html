@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="../css/displayDetailsEmployees.css">
+    <script src="../js/generalFunctions.js"></script>
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    </head>
+</head>
+<body>
+    <div class="container">
+        <!-- PAGE HEADER -->
+        <div class="header">
+            <h1 style="font-family: 'Times New Roman', Times, serif;;">TRAVEL REQUESTOR</h1>
+        </div>
+        <button type="logout" class="btn btn-dark" onclick="logout()">LOGOUT</button>
+        <!-- NAVIGATION BAR -->
+        <div class="topNav">
+            <div class="about">
+                <button class="btn" onclick="home()">Home</button>
+            </div>
+            <div class="about">
+                <button class="btn">View</button>
+                <div class="btncontent">
+                    <ul style="list-style-type: none;padding-left: 10px;">
+                        <li><a href="../pages/viewAll.html">View All</a></li>
+                        <li><a href="#">Critical</a></li>
+                        <li><a href="#">Normal</a></li>
+                        <li><a href="#">Rejected</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <!-- DISPLAYING THE DETAILS -->
+        <div class="content">
+        <h2><b>Travel Details</b></h2><br>
+        <hr>
+        <p><b>Emp Id: 512</b></p>
+        <p><b>Emp Name: Donald</b></p>
+        <p><b>Cause for Travel: Client Meeting for abc project</b></p>
+        <p><b>Source: Trivandrum in India</b></p>
+        <p><b>Destination: New Delhi in India</b></p>
+        <p><b>From 22/10/2017 to 25/10/2017 for 3 days</b></p>
+        <p><b>Requested mode of travel: Flight</b></p>
+        </div>
+    </div>
+</body>
+</html>

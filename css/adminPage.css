@@ -1,0 +1,147 @@
+.header {
+    text-align: center;
+}
+
+.btn {
+    margin-left: 92%;
+    margin-bottom: 1.5%;
+}
+/* NAVIGATION BAR STYLES */
+
+body {
+    margin: 0;
+}
+
+.topNav {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 0;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.navBtn {
+    float: left;
+    overflow: hidden;
+}
+
+.navBtn .pending:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 73, 72);
+}
+
+
+.navBtn .pending {
+    border: none;
+    /* outline: none; */
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.navBtn .all:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 73, 72);
+}
+
+
+.navBtn .all {
+    border: none;
+    /* outline: none; */
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.navBtn .approved:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 73, 72);
+}
+
+.navBtn .approved {
+    border: none;
+    /* outline: none; */
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.navBtn .rejected:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 73, 72);
+}
+
+.navBtn .rejected {
+    border: none;
+    /* outline: none; */
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.navBtn .onhold:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 73, 72);
+}
+
+.navBtn .onhold {
+    border: none;
+    /* outline: none; */
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+.topNav a {
+    float: left;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.topNav a:hover {
+    color: rgb(219, 0, 0);
+}
+
+/* END OF LOGIN PAGE */
+
+/* for displaying details */
+.content {
+    margin-top: 2%;
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.content hr {
+    margin-top: -2%;
+}

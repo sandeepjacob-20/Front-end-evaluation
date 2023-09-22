@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="../js/login.js"></script>
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/5d5d18176b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Page header -->
+        <header><h1>TRAVEL REQUESTOR</h1></header>
+        <img src="../images/logo.png" alt="login" class="loginImg">
+        <!-- login form -->
+        <form id="loginForm">
+            <div class="formArea">
+                <label for="username"><i class="fa-solid fa-user fa-bounce"></i></i></label>
+                <input type="text" name="username" id="username" placeholder="Username" style="border-radius: 7px;"><br><br>
+                <label for="password"><i class="fa-solid fa-key fa-bounce"></i></label>
+                <input type="password" name="password" id="password" placeholder="Password" style="border-radius: 7px;"><br><br>
+                <button type="submit" class="btn btn-danger" style="border-radius: 7px;">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="../css/displayDetailsEmployees.css">
+    <script src="../js/generalFunctions.js"></script>
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    </head>
+</head>
+<body>
+    <div class="container">
+        <!-- PAGE HEADER -->
+        <div class="header">
+            <h1 style="font-family: 'Times New Roman', Times, serif;;">TRAVEL REQUESTOR</h1>
+        </div>
+        <button type="logout" class="btn btn-dark" onclick="logout()">LOGOUT</button>
+        <!-- NAVIGATION BAR -->
+        <div class="topNav">
+            <div class="about">
+                <button class="btn" onclick="home()">Home</button>
+            </div>
+            <div class="about">
+                <button class="btn">View</button>
+                <div class="btncontent">
+                    <ul style="list-style-type: none;padding-left: 10px;">
+                        <li><a href="../pages/viewAll.html">View All</a></li>
+                        <li><a href="#">Critical</a></li>
+                        <li><a href="#">Normal</a></li>
+                        <li><a href="#">Rejected</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <!-- TABLE TO DISPLAY THE DETAILS -->
+        <table class="table table-dark table-striped-columns" style=" border: 1px solid black; margin-top: 15%;">
+            <tr>
+                <th>Employee Name</th>
+                <th>Destination</th>
+                <th>Priority</th>
+                <th>View Details</th>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Las Vegas</td>
+                <td>Critical</td>
+                <td><a href="./tripDetails.html">View More</a></td>
+            </tr>
+            <tr>
+                <td>Aswathy</td>
+                <td>Delhi</td>
+                <td>Normal</td>
+                <td><a href="#">View More</a></td>
+            </tr>
+            <tr>
+                <td>Franco</td>
+                <td>Kochi</td>
+                <td>Normal</td>
+                <td><a href="#">View More</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+    </div>
+</body>
+</html>

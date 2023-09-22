@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details-admin</title>
+    <link rel="stylesheet" href="../css/adminPage.css">
+    <script src="../js/generalFunctions.js"></script>
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- PAGE HEADER -->
+        <div class="header">
+            <h1 style="font-family: 'Times New Roman', Times, serif;;">TRAVEL REQUESTOR</h1>
+        </div>
+        <button type="logout" class="btn btn-dark" onclick="logout()">LOGOUT</button>
+        <!-- NAVIGATION BAR -->
+        <div class="topNav">
+            <div class="navBtn">
+                <button class="pending" onclick="pending()">Pending</button>
+            </div>
+            <div class="navBtn">
+                <button class="all">All</button>
+            </div>
+            <div class="navBtn">
+                <button class="approved">Approved</button>
+            </div>
+            <div class="navBtn">
+                <button class="rejected">Rejected</button>
+            </div>
+            <div class="navBtn">
+                <button class="onHold">Onhold</button>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <!-- DISPLAYING THE DETAILS -->
+        <div class="content">
+            <h2><b>Travel Details</b></h2><br>
+            <hr>
+            <p><b>Emp Id: 512</b></p>
+            <p><b>Emp Name: Donald</b></p>
+            <p><b>Cause for Travel: Client Meeting for abc project</b></p>
+            <p><b>Source: Trivandrum in India</b></p>
+            <p><b>Destination: New Delhi in India</b></p>
+            <p><b>From 22/10/2017 to 25/10/2017 for 3 days</b></p>
+            <p><b>Requested mode of travel: Flight</b></p>
+        </div>
+    </div>
+</body>
+</html>

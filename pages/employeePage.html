@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="../css/displayDetailsEmployees.css">
+    <script src="../js/requestForm.js"></script>
+    <script src="../js/generalFunctions.js"></script>
+    <script src="https://kit.fontawesome.com/5d5d18176b.js" crossorigin="anonymous"></script>
+    <script>
+        // Prevents the user from going back to the login page
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+<body>
+    <div class="container">
+        <!-- PAGE HEADER -->
+        <div class="header">
+            <h1 style="font-family: 'Times New Roman', Times, serif;;">TRAVEL REQUESTOR</h1>
+        </div>
+            <button type="logout" class="btn btn-dark" onclick="logout()">LOGOUT</button>
+        <!-- NAVIGATION BAR -->
+        <div class="topNav">
+            <div class="about">
+                <button class="btn ">Home</button>
+            </div>
+            <div class="about">
+                <button class="btn">View</button>
+                <div class="btncontent">
+                    <ul style="list-style-type: none;padding-left: 10px;">
+                        <li><a href="../pages/viewAll.html">View All</a></li>
+                        <li><a href="#">Critical</a></li>
+                        <li><a href="#">Normal</a></li>
+                        <li><a href="#">Rejected</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END OF NAVIGATION BAR -->
+        <!-- REQUEST FORM -->
+        <div class="forms">
+            <form id="requestForm">
+                <header><h1 style="font-family: Arial, Helvetica, sans-serif;">Travel Request Form</h1></header><br>
+                <!-- EMPLOYEE ID AND EMPLOYEE NAME FIELD -->
+                <div id = "form-class">
+                    <label><i class="fa-solid fa-id-card fa-fade"></i></label>
+                    <input type="text" id="empid" placeholder="Employee ID" style="border-radius: 10px;">
+                    <span id="idError" style="color: red;"></span>
+                    <label style="padding-left: 42px;"><i class="fa-solid fa-signature fa-beat-fade"></i></label>
+                    <input type="text" id="empname" placeholder="Employee Name" style="border-radius: 10px;">
+                    <span id="nameError" style="color: red;"></span><br>
+                </div><br>
+                <!-- PROJECT AND CAUSE FIELD -->
+                <div id="form-class">
+                    <label><i class="fa-solid fa-diagram-project fa-beat-fade"></i></label>
+                    <input type="text" id="project" placeholder="Project" style="border-radius: 10px;">
+                    <span id="projectError" style="color: red;"></span>
+                    <label style="padding-left: 48px;""><i class="fa-solid fa-suitcase-rolling fa-beat-fade"></i></label>
+                    <input type="text" id="cause" placeholder="Cause" style="border-radius: 10px;">
+                    <span id="causeError" style="color: red;"></span><br>
+                </div><br>
+                <!-- SOURCE AND DESTINATION FIELD -->
+                <div id="form-class">
+                    <label><i class="fa-solid fa-map-pin fa-beat-fade"></i></label>
+                    <input type="text" id="source" placeholder="Source" style="border-radius: 10px;">
+                    <span id="sourceError" style="color: red;"></span>
+                    <label style="padding-left: 48px;"><i class="fa-solid fa-map-location-dot fa-beat-fade"></i></label>
+                    <input type="text" id="destination" placeholder="Destination" style="border-radius: 10px;">
+                    <span id="destinationError" style="color: red;"></span><br>
+                </div><br>
+                <!-- FROM, TO DATES AND NUMBER OF DAYS FIELD -->
+                <div id="form-class">
+                    <label><i class="fa-solid fa-calendar-days fa-beat-fade"></i></label>
+                    <input type="date" id="fromDate" style="border-radius: 10px;">
+                    <span id="fromDateError" style="color: red;"></span> 
+                    <label style="padding-left: 95px;"><i class="fa-solid fa-calendar-days fa-beat-fade"></i></label>
+                    <input type="date" id="toDate" readonly style="border-radius: 10px;"><br><br>
+                    <label><i class="fa-solid fa-hourglass-half fa-beat-fade"></i></label>
+                    <input type="number" id="noOfDays" placeholder="Number of days" onchange="getToDate()" style="border-radius: 10px;">
+                    <span id="noOfDaysError" style="color: red;"></span>
+                </div><br>
+                <!-- MODE OF TRAVEL FIELD -->
+                <div id="form-class">
+                    <label><i class="fa-solid fa-route fa-beat-fade"></i></label>
+                    <input type="text" id="modeOfTravel" placeholder="Mode of travel" style="border-radius: 10px;">
+                    <span id="modeError" style="color: red;"></span>
+                </div><br>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="btn btn-danger" style="border-radius: 20px;">SUBMIT</button>
+            </form>
+        </div>  
+    </div>
+</body>
+</html>
