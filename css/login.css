@@ -8,7 +8,6 @@ h1{
 .container {
     text-align: center;
     animation: changeColor 4s linear infinite;
-    /* background-color: rgb(240, 160, 160); */
     border-radius: 12px;
     padding: 1px;
     width: 40vw;
@@ -27,7 +26,8 @@ h1{
 }
 
 body{
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/bg_new.jpg');
+    /* backface-visibility: hidden; */
     background-size: cover;
 }
 
